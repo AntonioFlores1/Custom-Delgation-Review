@@ -58,16 +58,32 @@
 		A9E3417523E168FE00BF81D8 /* Custom Delegation Review */ = {
 			isa = PBXGroup;
 			children = (
-				A9E3417623E168FE00BF81D8 /* AppDelegate.swift */,
-				A9E3417823E168FE00BF81D8 /* SceneDelegate.swift */,
-				A9E3417A23E168FE00BF81D8 /* ViewController.swift */,
-				A9E3418A23E1692700BF81D8 /* DetailViewController.swift */,
+				A9E3418D23E16CE100BF81D8 /* Supporting Files */,
+				A9E3418C23E16CC600BF81D8 /* View Controllers */,
 				A9E3417C23E168FE00BF81D8 /* Main.storyboard */,
 				A9E3417F23E1690000BF81D8 /* Assets.xcassets */,
 				A9E3418123E1690000BF81D8 /* LaunchScreen.storyboard */,
 				A9E3418423E1690000BF81D8 /* Info.plist */,
 			);
 			path = "Custom Delegation Review";
+			sourceTree = "<group>";
+		};
+		A9E3418C23E16CC600BF81D8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9E3417A23E168FE00BF81D8 /* ViewController.swift */,
+				A9E3418A23E1692700BF81D8 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A9E3418D23E16CE100BF81D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9E3417623E168FE00BF81D8 /* AppDelegate.swift */,
+				A9E3417823E168FE00BF81D8 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
