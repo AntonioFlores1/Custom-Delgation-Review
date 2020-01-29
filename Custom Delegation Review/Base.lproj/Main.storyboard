@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Custom_Delegation_Review" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Service do you like ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09m-Jv-I1m">
+                                <rect key="frame" x="20" y="124" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OjY-Pc-216">
+                                <rect key="frame" x="37" y="205" width="340" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="FWB-nz-Q7S"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQP-E0-X0m">
+                                <rect key="frame" x="174.5" y="505" width="65" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ArK-qI-DoE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UQP-E0-X0m" firstAttribute="top" secondItem="OjY-Pc-216" secondAttribute="bottom" constant="57" id="21r-2h-qt4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OjY-Pc-216" secondAttribute="trailing" constant="37" id="8Qi-FO-ClT"/>
+                            <constraint firstItem="UQP-E0-X0m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PeI-Ac-VTQ"/>
+                            <constraint firstItem="09m-Jv-I1m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="RXl-Fp-yby"/>
+                            <constraint firstItem="OjY-Pc-216" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="TSk-3u-BDQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09m-Jv-I1m" secondAttribute="trailing" constant="20" id="XRF-V4-DCJ"/>
+                            <constraint firstItem="OjY-Pc-216" firstAttribute="top" secondItem="09m-Jv-I1m" secondAttribute="bottom" constant="47.5" id="wfl-7C-xFW"/>
+                            <constraint firstItem="09m-Jv-I1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yLb-dX-syA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="OjY-Pc-216" id="6cx-j9-6jB"/>
+                        <outlet property="label" destination="09m-Jv-I1m" id="vyg-un-GoA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="PZ5-VT-Izk">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="SZg-Dd-rDs" customClass="DetailViewController" customModule="Custom_Delegation_Review" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3bT-S8-spg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which is better ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP6-Ay-FQj">
+                                <rect key="frame" x="20" y="123" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-sh-4aB">
+                                <rect key="frame" x="47.5" y="221.5" width="319" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="UmR-EL-TB2"/>
+                                    <constraint firstAttribute="width" constant="319" id="YBq-zG-4gb"/>
+                                </constraints>
+                                <state key="normal" image="netflix"/>
+                                <connections>
+                                    <action selector="netflix:" destination="SZg-Dd-rDs" eventType="touchUpInside" id="bME-JC-OE6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-UL-djZ">
+                                <rect key="frame" x="47.5" y="505.5" width="319" height="212"/>
+                                <state key="normal" image="hulu"/>
+                                <connections>
+                                    <action selector="hulu:" destination="SZg-Dd-rDs" eventType="touchUpInside" id="xy7-sa-4H1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bfI-UL-djZ" firstAttribute="width" secondItem="h4S-sh-4aB" secondAttribute="width" id="AsZ-HL-PH7"/>
+                            <constraint firstItem="bfI-UL-djZ" firstAttribute="centerX" secondItem="h4S-sh-4aB" secondAttribute="centerX" id="B57-8X-rWH"/>
+                            <constraint firstItem="h4S-sh-4aB" firstAttribute="top" secondItem="kP6-Ay-FQj" secondAttribute="bottom" constant="60" id="B6t-Uy-YcP"/>
+                            <constraint firstItem="kP6-Ay-FQj" firstAttribute="top" secondItem="rTj-wy-ON8" secondAttribute="top" constant="79" id="ElP-ID-Ff7"/>
+                            <constraint firstItem="bfI-UL-djZ" firstAttribute="height" secondItem="h4S-sh-4aB" secondAttribute="height" multiplier="0.946429" id="XLu-UT-sOt"/>
+                            <constraint firstItem="rTj-wy-ON8" firstAttribute="trailing" secondItem="kP6-Ay-FQj" secondAttribute="trailing" constant="20" id="ek4-vd-O14"/>
+                            <constraint firstItem="kP6-Ay-FQj" firstAttribute="leading" secondItem="rTj-wy-ON8" secondAttribute="leading" constant="20" id="fwi-Bx-nWK"/>
+                            <constraint firstItem="bfI-UL-djZ" firstAttribute="top" secondItem="h4S-sh-4aB" secondAttribute="bottom" constant="60" id="jED-Hz-53K"/>
+                            <constraint firstItem="h4S-sh-4aB" firstAttribute="centerX" secondItem="3bT-S8-spg" secondAttribute="centerX" id="vlb-u2-bg1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rTj-wy-ON8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP6-Zi-dfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hulu" width="1020" height="574"/>
+        <image name="netflix" width="1440" height="817"/>
+    </resources>
+</document>
